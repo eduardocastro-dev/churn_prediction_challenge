@@ -25,6 +25,7 @@ O threshold de 0,40 foi escolhido para aumentar a capacidade de identificação 
 churn_prediction_challenge/
 ├── data/
 ├── docs/
+│   ├── ML_CANVAS.md
 │   └── MODEL_CARD.md
 ├── models/
 │   └── churn_model.joblib
@@ -162,13 +163,15 @@ notebooks/02_comparacao_de_modelos.ipynb
 
 Contém os experimentos com diferentes abordagens de modelagem, validação cruzada, ajustes de hiperparâmetros, comparação das métricas e seleção do modelo final.
 
-## Documentação do modelo
+## Documentação do projeto
+
+O contexto de negócio, stakeholders, métricas de negócio e critérios de sucesso da solução estão documentados em:
+
+`docs/ML_CANVAS.md`
 
 Informações detalhadas sobre o modelo selecionado, dados utilizados, pré-processamento, métricas, uso pretendido, riscos e limitações estão disponíveis em:
 
-```text
-docs/MODEL_CARD.md
-```
+`docs/MODEL_CARD.md`
 
 ## Observações
 
