@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 
 from src.predict import prever_churn
@@ -39,6 +40,14 @@ class DadosCliente(BaseModel):
     MonthlyCharges: float
     TotalCharges: float
 
+
+@app.get("/", include_in_schema=False)
+def raiz():
+    """
+    Redireciona a raiz da aplicação para a documentação interativa,
+    já que não há um endpoint funcional definido para "/".
+    """
+    return RedirectResponse(url="/docs")
 
 @app.get("/health")
 def verificar_saude():
